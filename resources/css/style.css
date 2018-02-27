@@ -16,6 +16,7 @@ header {
     font-family: Verdana, sans-serif;
     font-size: 14px;
     font-weight: bold;
+    top: 0;
 }
 
 header nav {
@@ -51,18 +52,16 @@ nav span a {
 
 .container {
     display: flex;
-    position: relative;
-    top: 116px;
     width: 1232px;
     margin: 0 auto 78px auto;
-    border: 1px solid black;
+
 }
 
 .column {
     display: flex;
     flex-direction: column;
     margin-right: 32px;
-    border: 1px solid black;
+
 }
 
 .column.large {
@@ -77,42 +76,50 @@ nav span a {
     width: 240px;
 }
 
-.lead-story {
-    border: 1px solid black;
-}
-
-.lead-story > .img-content {
-    font-size: 40px;
-}
+.lead-story {}
 
 .img-content {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
     font-family: Georgia;
     font-size: 30px;
     font-weight: bold;
     color: #fff;
     height: 300px;
-    border: 1px solid black;
+    margin-top: 15px;
+    text-align: center;
 }
 
 .lead-story .img-content {
+    font-size: 40px;
+    text-align: left;
     background-image: url("../images/img-story-main.png");
 }
 
 .stories {
-    border: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 17px;
+
 }
 
 .story {
-    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    padding-right: 32px;
+    width: 300px;
+
 }
 
-.text-content {
-    border: 1px solid black;
+.stories .text-content {
+    width: 250px;
 }
 
-.news-bites {
-    border: 1px solid black;
+.news-bites h3 {
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
 }
 
 .img-content.earth-backwards {
@@ -125,4 +132,42 @@ nav span a {
 
 .img-content.cat-control {
     background-image: url(../images/img-story-1.png)
+}
+
+.bite {
+    display: block;
+    background-color: whitesmoke;
+    font-family: Verdana;
+    font-size: 12px;
+    color: dimgray;
+    border-bottom: 1px solid #000;
+    padding: 11px 20px;
+}
+
+footer nav {
+    display: inline-block;
+    padding-left: 25px;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 325px;
+    background-color: mediumaquamarine;
+    margin: auto;
+    font-family: Verdana;
+    font-size: 12px;
+}
+
+footer .title {
+    display: inline-block;
+    padding-right: 25px;
+    font-family: Georgia;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    border-right: 2px solid #fff;
 }
